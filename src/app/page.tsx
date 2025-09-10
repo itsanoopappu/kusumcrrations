@@ -1,103 +1,83 @@
-import Image from "next/image";
+import Hero from './components/Hero';
+import ProductCard from './components/ProductCard';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div>
+      {/* Hero Section with Founder Story */}
+      <Hero />
+      
+      {/* Featured Products Section */}
+      <div className="container">
+        <div className="section-header">
+          <h2 className="section-title">Featured Products</h2>
+          <p className="section-subtitle">Handcrafted with love, made with nature's finest</p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+        
+        <div className="featured-products">
+          <ProductCard
+            number="NO. 001"
+            name="Kesar Glycerin"
+            description="A translucent masterpiece infused with pure saffron strands. Each bar is carefully crafted to provide gentle cleansing while maintaining skin's natural moisture balance."
+            ingredients="Glycerin, Pure Kesar, Vitamin E Oil"
+            price="₹120"
+            icon="◈"
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
+          
+          <ProductCard
+            number="NO. 002"
+            name="Rose Clay"
+            description="French rose clay meets handpicked rose petals in this detoxifying blend. Designed to draw out impurities while leaving skin soft and radiant."
+            ingredients="Rose Clay, Rose Petals, Rose Water, Shea Butter"
+            price="₹140"
+            icon="◉"
           />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
+          
+          <ProductCard
+            number="NO. 003"
+            name="Charcoal Detox"
+            description="Activated charcoal combined with tea tree oil creates a powerful yet gentle cleansing experience. Perfect for modern living in urban environments."
+            ingredients="Activated Charcoal, Tea Tree Oil, Olive Oil"
+            price="₹140"
+            icon="◆"
           />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+        
+        <div className="section-cta">
+          <Link href="/shop" className="cta-button">View All Products</Link>
+        </div>
+      </div>
+      
+      {/* Philosophy Section */}
+      <div className="philosophy-section">
+        <h2 className="philosophy-title">Our Philosophy</h2>
+        <p className="philosophy-text">
+          At Kusum Creations, we believe in the power of simplicity. Each product is thoughtfully formulated using time-honored ingredients from nature, crafted by hand in small batches to ensure the highest quality and care.
+        </p>
+        
+        <div className="values-grid">
+          <div className="value-item">
+            <div className="value-icon">🌿</div>
+            <h3 className="value-title">Natural</h3>
+            <p className="value-desc">100% natural ingredients sourced responsibly</p>
+          </div>
+          <div className="value-item">
+            <div className="value-icon">✋</div>
+            <h3 className="value-title">Handmade</h3>
+            <p className="value-desc">Crafted with care in small batches</p>
+          </div>
+          <div className="value-item">
+            <div className="value-icon">♻️</div>
+            <h3 className="value-title">Sustainable</h3>
+            <p className="value-desc">Eco-conscious packaging and practices</p>
+          </div>
+        </div>
+        
+        <div className="section-cta">
+          <Link href="/our-story" className="cta-button">Read Our Story</Link>
+        </div>
+      </div>
     </div>
   );
 }
