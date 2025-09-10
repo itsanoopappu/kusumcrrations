@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="footer-section">
           <h3 className="footer-title">Kusum Creations</h3>
           <p className="footer-text">
-            Nature's luxury, crafted with love. Handmade skincare products 
+            Nature&apos;s luxury, crafted with love. Handmade skincare products 
             using only the finest natural ingredients.
           </p>
         </div>

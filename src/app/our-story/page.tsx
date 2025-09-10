@@ -24,15 +24,15 @@ export default function OurStory() {
           <div className="founder-content">
             <div className="founder-image">
               <div className="founder-image-placeholder">
-                <p>Priyanka's Photo<br/>Coming Soon</p>
+                <p>Priyanka&apos;s Photo<br/>Coming Soon</p>
               </div>
             </div>
             <div className="founder-text">
               <h2 className="founder-name">Meet Priyanka Sharma</h2>
               <p className="founder-role">Founder & Chief Artisan</p>
               <p className="founder-story">
-                What started as weekend experiments in my grandmother's kitchen has grown into a 
-                mission to bring you nature's purest gifts. Armed with her century-old recipes 
+                What started as weekend experiments in my grandmother&apos;s kitchen has grown into a 
+                mission to bring you nature&apos;s purest gifts. Armed with her century-old recipes 
                 and a passion for natural beauty, I began Kusum Creations in 2020.
               </p>
               <p className="founder-story">
@@ -65,7 +65,7 @@ export default function OurStory() {
             <div className="value-card">
               <h3 className="value-card-title">💚 Sustainable Practices</h3>
               <p className="value-card-text">
-                From eco-friendly packaging to responsible sourcing, we're committed to protecting 
+                From eco-friendly packaging to responsible sourcing, we&apos;re committed to protecting 
                 the planet that provides us with these beautiful natural ingredients.
               </p>
             </div>
@@ -81,7 +81,7 @@ export default function OurStory() {
               <div className="timeline-content">
                 <h3 className="timeline-event">The Beginning</h3>
                 <p className="timeline-description">
-                  Started experimenting with grandmother's traditional recipes in my kitchen, 
+                  Started experimenting with grandmother&apos;s traditional recipes in my kitchen, 
                   driven by a desire for chemical-free skincare.
                 </p>
               </div>
@@ -129,8 +129,8 @@ export default function OurStory() {
               and every person deserves access to pure, effective, and lovingly crafted skincare.
             </p>
             <p className="mission-quote">
-              "When you choose Kusum Creations, you're not just buying a product - 
-              you're supporting a dream, a tradition, and a commitment to natural beauty."
+              &quot;When you choose Kusum Creations, you&apos;re not just buying a product - 
+              you&apos;re supporting a dream, a tradition, and a commitment to natural beauty.&quot;
             </p>
             <p className="mission-signature">- Priyanka Sharma, Founder</p>
           </div>

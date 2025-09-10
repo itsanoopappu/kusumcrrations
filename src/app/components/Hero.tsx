@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
     <section className="hero">
@@ -10,7 +8,7 @@ export default function Hero() {
           <p className="hero-description">
             From a small kitchen to your home, every Kusum Creations product tells a story 
             of passion, tradition, and love for natural beauty. What started as experiments 
-            with grandmother's recipes has blossomed into a mission to bring you nature's 
+            with grandmother&apos;s recipes has blossomed into a mission to bring you nature&apos;s 
             purest gifts.
           </p>
           <div className="hero-stats">

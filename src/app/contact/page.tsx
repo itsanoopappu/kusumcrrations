@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import type { Metadata } from "next";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -39,7 +38,7 @@ export default function Contact() {
           <div className="contact-hero-content">
             <h1 className="contact-title">Get In Touch</h1>
             <p className="contact-subtitle">
-              We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              We&apos;d love to hear from you. Send us a message and we&apos;ll respond as soon as possible.
             </p>
           </div>
         </div>
@@ -210,13 +209,13 @@ export default function Contact() {
               <h3 className="faq-question">Do you offer custom orders?</h3>
               <p className="faq-answer">
                 Yes! We love creating custom products. Contact us with your specific requirements, 
-                and we'll work with you to create something special.
+                and we&apos;ll work with you to create something special.
               </p>
             </div>
             <div className="faq-item">
-              <h3 className="faq-question">What's your minimum order quantity?</h3>
+              <h3 className="faq-question">What&apos;s your minimum order quantity?</h3>
               <p className="faq-answer">
-                There's no minimum order quantity for our regular products. For custom orders, 
+                There&apos;s no minimum order quantity for our regular products. For custom orders, 
                 we typically require a minimum of 5 pieces.
               </p>
             </div>

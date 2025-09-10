@@ -12,7 +12,7 @@ export default function Home() {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Featured Products</h2>
-          <p className="section-subtitle">Handcrafted with love, made with nature's finest</p>
+          <p className="section-subtitle">Handcrafted with love, made with nature&apos;s finest</p>
         </div>
         
         <div className="featured-products">
